@@ -1,12 +1,12 @@
 process.stdout.write('hello from spinner1.js... \rheyyy\n');
 
-const sentence = "\r|\r/\r-\r\\\r|";
-let delay = 0
-for (const char of sentence) {
+const spinArr= "\r|\r/\r-\r\\\r|";
+let spin = 0
+for (const char of spinArr) {
   setTimeout(() => {
     process.stdout.write(`\r ${char}`);
-  }, delay)
-  delay += 100
+  }, spin)
+  spin += 100
 };
 
 setTimeout(() => {
